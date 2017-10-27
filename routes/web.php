@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', 'https://sleeplessmind.com.mo');
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
