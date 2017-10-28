@@ -16,3 +16,6 @@ Capfile
 config/deploy.rb
 config/deploy/*
 log/*
+
+# macos
+.DS_Store
