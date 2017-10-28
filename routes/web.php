@@ -15,4 +15,8 @@ Route::redirect('/', 'https://sleeplessmind.com.mo');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/api/docs', function () {
+    return view('api.docs');
+})->middleware('auth');
+
 Auth::routes();
